@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,400&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+    outline:none ;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+        transform: translateY(-4rem) scale(0.4);
+    }
+
+}
+header {
+
+position: relative;
+width: 100%;
+height: 70px;
+background-color:rgb(8, 9,19) ;
+color: white;
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+
+
+
+
+}
+
+.heading {
+    text-align: center;
+    color: #222;
+    margin-bottom: 3rem;
+    font-size: 4rem;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 4%;
+    justify-content: space-evenly;
+
+}
+
+
+.imag {
+    width: 105px;
+
+}
+
+.navbar {
+    position: relative;
+    width: 70%;
+    padding: 5%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searchBox{
+    position: relative;
+    width: 60%;
+    
+}
+
+.searchBox input{
+    width: 80%;
+    height: 31px;
+    border-radius: 8px;
+    padding: 1%;
+    text-indent: 10px;
+    font-size: 18px;
+
+}
+
+#searchIcon {
+    position: relative;
+    left: -10%;
+    font-size: 20px;
+    color: rgb(37,37,37);
+    cursor: pointer;
+    z-index: 221;
+}
+ul{
+    width: 80%;
+    height: 33px;
+    text-align: center;
+    
+}
+ul li:hover{
+    height: 40px;
+}
+ul li {
+    display: inline-block;
+    margin-left:6%;
+    padding: 1%;
+    transition: all 0.5s ease;
+    padding: 1%;
+    text-align: center;
+    cursor: pointer;
+    padding: 1%;
+    height: 20px;
+    overflow: hidden;
+}
+
+
+ul li  #headIcon {
+    display: block;
+    font-size: 22px
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    /* display: none; */
+}
+
+ul li a:active , :focus{
+    display: inline;
+}
+body
+{
+    background-image: url(https://previews.123rf.com/images/nadianb/nadianb2210/nadianb221000151/192834310-cosm%C3%A9ticos-profesionales-de-maquillaje-sobre-fondo-rosa.jpg);
+    background-size: cover;
+}
+.contenedor
+{
+    font-size: 17px;
+    position: absolute;
+    left: 420px;
+    margin-top: 40px;
+    margin-bottom: -60px;
+}
+.inicio
+{
+    width: 50%;
+    height: 500px;
+    background:white;
+
+}
+.inicio h1
+{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 25px;
+    margin-left: 46px;
+}
+.inicio p
+{
+    width:390px;
+    text-align: center;
+    position: relative;
+    left: 10%;
+    margin-top: 10px;
+    margin-bottom:40px;
+}
+.sobre
+{
+    height: 100vh;
+}
+
+.cajon input
+{
+    display: grid;
+    position: relative;
+    left: 20%;
+    width: 310px;
+    height: 35px;
+    margin: 5px;
+    border-radius: 10px solid #e2c5ca;
+    background-color: rgb(255, 217, 217);
+}
+.btn a
+{
+    margin-top: 20px;
+    display: inline-block;
+    background: rgb(254, 98, 98);
+    border-radius: 5px;
+    padding: 0.5rem 0.5rem;
+    width: 310px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    left: 19%;
+    margin: 5px;
+    text-align: center;
+    border-radius: 10px;
+}
+.btn a:hover
+{
+    background: #fff;
+    color: #000000;
+    box-shadow: 0 2px 5px;
+
+}
+.logo
+{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    position: relative;
+    top: 10px;
+    right: 133px;
+}
+.logo img
+{
+    position: relative;
+    left: 140px;
+}
+.text
+{
+    margin-top: 45px; 
+    position: relative;
+    left: 10px;
+}

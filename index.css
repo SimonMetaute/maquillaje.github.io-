@@ -1,0 +1,537 @@
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+    outline:none ;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+        transform: translateY(-4rem) scale(0.4);
+    }
+
+}
+header {
+
+position: relative;
+width: 100%;
+height: 70px;
+background-color:rgb(8, 9,19) ;
+color: white;
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+
+
+
+
+}
+
+.heading {
+    text-align: center;
+    color: #222;
+    margin-bottom: 3rem;
+    font-size: 4rem;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 4%;
+    justify-content: space-evenly;
+
+}
+
+
+.imag {
+    width: 105px;
+
+}
+
+.navbar {
+    position: relative;
+    width: 70%;
+    padding: 5%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searchBox{
+    position: relative;
+    width: 60%;
+    
+}
+
+.searchBox input{
+    width: 80%;
+    height: 31px;
+    border-radius: 8px;
+    padding: 1%;
+    text-indent: 10px;
+    font-size: 18px;
+
+}
+
+#searchIcon {
+    position: relative;
+    left: -10%;
+    font-size: 20px;
+    color: rgb(37,37,37);
+    cursor: pointer;
+    z-index: 221;
+}
+ul{
+    width: 80%;
+    height: 33px;
+    text-align: center;
+    
+}
+ul li:hover{
+    height: 40px;
+}
+ul li {
+    display: inline-block;
+    margin-left:6%;
+    padding: 1%;
+    transition: all 0.5s ease;
+    padding: 1%;
+    text-align: center;
+    cursor: pointer;
+    padding: 1%;
+    height: 20px;
+    overflow: hidden;
+}
+
+
+ul li  #headIcon {
+    display: block;
+    font-size: 22px
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    /* display: none; */
+}
+
+ul li a:active , :focus{
+    display: inline;
+}
+
+
+section{
+    padding: 3rem 9%;
+}
+
+.home {
+    position: relative ;
+    padding: 0;
+
+}
+
+.home .slide {
+    padding: 3rem;
+    display: flex;
+    min-height:75vh;
+    display: none;
+
+}
+
+.home .slide .content {
+    margin-right: 55%;
+    text-align: left;
+   margin-left: 10%;
+}
+
+.home .slide.active {
+    display: flex;
+}
+
+.home .slide .content span {
+    color: wheat;
+    display: block;
+    font-size: 4rem;
+    text-shadow: 0 0.5rem 1rem rgba(0,0,0,0.7);
+    animation: fadeIn .2s linear backwards;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    
+
+}
+
+.home .slide .content span:hover {
+    color: rgb(253, 56, 56);
+} 
+
+
+.home .slide .content h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    text-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
+    animation: fadeIn .2s linear backwards .4s;
+    letter-spacing: .1rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    color: #7f5050;
+    font-size: 1.7rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.7);
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+
+.btn:hover {
+    letter-spacing: .1rem;
+    background-color: wheat;
+    
+    
+}
+
+
+.home .slide .content .btn {
+    animation: fadeIn .2s linear backwards .6s;
+
+}
+
+.home #next-slide,
+.home #prev-slide {
+    height: 3rem;
+    width: 3rem;
+    line-height: 3.0rem;
+    font-size: 1.5rem;
+    color: #222;
+    border: 0.2rem solid #222;
+    background: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+    cursor: pointer;
+    position: absolute;
+    bottom: 2rem;
+    right: 3rem;
+    text-align: center;
+}
+
+
+.home #next-slide:hover,
+.home #prev-slide:hover {
+    background-color:rgb(253, 56, 56);
+    color: wheat;
+}
+
+.home #prev-slide {
+    right: 8rem;
+}
+
+.category .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(16rem,1fr) );
+    gap:2rem
+    
+}
+
+.category .box-container .box {
+    text-align: center;
+}
+
+.category .box-container .box:hover h3 {
+    color: rgb(253, 56, 56);
+}
+
+.category .box-container .box img{
+    height: 14rem;
+    margin-bottom: 1rem;
+}
+
+.category .box-container .box h3 {
+    font-size: 1.7rem;
+    color: #222;
+    font-weight: bold;
+}
+
+
+.shop {
+    color: #eee;
+}
+
+.shop img {
+    width: 150px;
+}
+
+.shop .box-container {
+    display: grid; 
+    grid-template-columns: repeat(3, 2fr);
+    gap: 2rem;
+}
+
+.shop .box-container .box {
+    text-align: center;
+    background-color:#fff;
+    border: 0.2rem solid #222;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+
+.shop .box-container .box:hover .img img {
+    transform: scale(1.1);
+}
+
+.shop .box-container .box:hover .img .icons {
+    transform: translateX(0rem);
+}
+
+.shop .box-container .box .img  {
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+.shio .box-container .box .img img {
+    height: 25rem;
+}
+
+.shop .box-container .box img .icons {
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    transform: translateX(-10rem);
+}
+
+.shop .box .box .img .icons a {
+    display: block;
+    height: 5rem;
+    width: 5rem;
+    line-height: 4.5rem;
+    font-size: 1.7rem;
+    color: #222;
+    border-radius:0.2rem solid #222 ;
+    box-shadow:  0.5rem 1rem rgba(0,0,0,0.1);
+    margin-top: 1rem;
+}
+
+.shop .box-container .box .img .icons a:hover{
+    color: #000000;
+    background-color: wheat;
+
+}
+
+.shop .box-container .box .content 
+{
+    padding: 2rem;
+
+}
+
+.shop .box-container .box .content h3 {
+    font-size: 2rem;
+    color: #222;
+    padding-bottom: .5rem;
+    font-weight: normal;
+}
+
+.shop .box-container .box .content .ptice {
+    font-size:  2rem;
+    font-weight: bolder;
+    color: rgb(213, 172, 96);
+}
+
+.shop .box-container .box .content .ptice span {
+    color: #666;
+    font-size: 1.7rem;
+    text-decoration: line-through;
+}
+.shop .box-container .box .content .img .icons {
+    color: #222;
+}
+
+.categ{
+    background-color: #27282c;
+}
+
+.bt {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    background-color: #fff;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    padding: 10px 30px;
+    transition: 0.5s;
+
+}
+
+.bt:hover {
+    background: var(--clr);
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 35px var(--clr);
+    color:  var(--clr);
+}
+
+.bt:before 
+{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #27282c;
+}
+
+.bt span {
+    position: relative;
+    z-index: 1;
+}
+
+.bt i {
+    position: absolute;
+    inset: 0;
+    display: block;
+    
+}
+
+.bt i::before {
+    content:  '';
+    position: absolute;
+    top: 0;
+    left: 80%;
+    width: 10px;
+    height: 4px;
+    background:#27282c;
+    transform: translateX(-50%) skewX(325deg);
+    transition: 0.5s;
+    
+}
+
+.bt:hover i::before {
+    width: 20px;
+    left: 20%;
+}
+
+.bt i::after {
+    content:  '';
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    width: 10px;
+    height: 4px;
+    background:#27282c;
+    transform: translateX(-50%) skewX(325deg);
+    transition: 0.5s;
+
+}
+
+.bt:hover i::after {
+    width: 20px;
+    left: 80%;
+}
+.footer {
+    background:#8a8a8a;
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns:repeat(4,5fr);
+    gap: 2rem;
+}
+
+.footer .box-container .box h3 {
+
+    font-size: 1.7rem;
+    color: #222;
+    padding:1rem 0 ;
+
+}
+
+.footer .box-container .box .link {
+    padding: 1rem 0;
+    font-size: 1.1rem;
+    color: #000000;
+    display: block;
+
+}
+
+
+.footer .box-container .box .link i {
+    padding-right: .5rem;
+    color: wheat;
+}
+
+.footer .box-container .box .link:hover {
+    color: wheat;
+}
+
+.footer .box-container .box .link:hover 
+{
+    padding-right: 2rem;
+
+}
+
+.footer .box-container .box .share {
+
+    margin-top: 2rem;
+    margin-left: -8rem;
+
+}
+
+.footer .box-container .box .share a {
+
+    height: 3.5rem;
+    width: 3.5rem ;
+    line-height: 3.5rem ;
+    font-size: 1.9rem;
+    border-radius: .5rem;
+    background: #eee;
+    text-align: center;
+    color: #222;
+    margin-right: .9rem;
+}
+
+.footer .box-container .box .share a:hover {
+
+    color: #fff;
+    background: wheat;
+}
+
+.footer .box-container .box p {
+    padding: 1rem 0;
+    font-size: 1.7rem;
+    color: #666;
+}
+
+.footer .box-container .box form .email {
+    border: 0.2rem solid #222;
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    text-transform: none;
+    color: #666;
+    margin: 1rem 0;
+    font-size: 1.6rem;
+}
+
+.footer .credit {
+    text-align: center;
+    padding:  0 6rem ;
+    padding-top: 3rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    border-top: 0.2rem solid #222;
+    color: #666;
+   
+
+}
+
